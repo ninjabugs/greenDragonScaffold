@@ -1,0 +1,84 @@
+/*
+IMPORTANT NOTE:
+ This file SHOULD NOT BE EDITED MANUALLY, as its purpose
+ is to be the point where all your stylesheet-files will
+ be imported
+*/
+
+
+
+// inject:sass
+
+@import  '_variables.scss';
+
+@import  'functions/_some-function.scss';
+
+@import  'base/_buttons.scss';
+
+@import  'base/_fonts.scss';
+
+@import  'base/_forms.scss';
+
+@import  'base/_icons.scss';
+
+@import  'base/_lists.scss';
+
+@import  'base/_page.scss';
+
+@import  'base/_tables.scss';
+
+@import  'base/_typography.scss';
+
+@import  'mixins/_some-mixin.scss';
+
+@import  'placeholders/_some-placeholder.scss';
+
+@import  '../scripts/_routes/aboutdrugs/_aboutdrugs-c.scss';
+
+@import  '../scripts/_routes/aboutus/_aboutus-c.scss';
+
+@import  '../scripts/_routes/application/_application-c.scss';
+
+@import  '../scripts/_routes/home/_home-c.scss';
+
+@import  '../scripts/_routes/menue/_menue-c.scss';
+
+@import  '../scripts/_routes/reviews/_reviews-c.scss';
+
+@import  '../scripts/_routes/sitemap/_sitemap-c.scss';
+
+@import  '../scripts/_routes/toc/_toc-c.scss';
+
+@import  '../scripts/aboutdrugs/aboutdrugscontent/_aboutdrugscontent-d.scss';
+
+@import  '../scripts/aboutdrugs/subnav/_subnav-d.scss';
+
+@import  '../scripts/aboutus/aboutuscontent/_aboutuscontent-d.scss';
+
+@import  '../scripts/aboutus/subnav/_subnav-d.scss';
+
+@import  '../scripts/apform/apform/_apform-d.scss';
+
+@import  '../scripts/home/generalbox/_generalbox-d.scss';
+
+@import  '../scripts/home/map/_map-d.scss';
+
+@import  '../scripts/home/misc/_misc-d.scss';
+
+@import  '../scripts/home/sidebox/_sidebox-d.scss';
+
+@import  '../scripts/menue/menue/_menue-d.scss';
+
+@import  '../scripts/menue/subnav/_subnav-d.scss';
+
+@import  '../scripts/misc/footer/_footer-d.scss';
+
+@import  '../scripts/misc/header/_header-d.scss';
+
+@import  '../scripts/reviews/reviews/_reviews-d.scss';
+
+@import  '../scripts/sitemap/sitemap/_sitemap-d.scss';
+
+@import  '../scripts/toc/toc/_toc-d.scss';
+
+// endinject
