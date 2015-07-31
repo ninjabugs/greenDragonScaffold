@@ -1,12 +1,12 @@
 /**
  * @ngdoc overview
- * @name greenDragonApp
+ * @name scaffold
  * @description
- * # greenDragonApp
+ * # scaffold
  *
  * Main module of the application.
  */
-angular.module('greenDragonApp', [
+angular.module('scaffold', [
     'ngAnimate',
     'ngAria',
     'ngResource',

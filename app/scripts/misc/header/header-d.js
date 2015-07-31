@@ -22,7 +22,7 @@ angular.module('scaffold')
         },
         controller: function ($scope)
         {
-
+            $scope.navs = ['aboutdrugs', 'aboutus', 'application', 'home', 'menue', 'reviews', 'sitemap',];
         }
     };
 });

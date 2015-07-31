@@ -1,12 +1,12 @@
 /**
  * @ngdoc service
- * @name scaffold.Subnav
+ * @name scaffold.Subnavaboutus
  * @description
- * # Subnav
+ * # Subnavaboutus
  * Service in the scaffold.
  */
 angular.module('scaffold')
-    .service('Subnav', function ()
+    .service('Subnavaboutus', function ()
     {
         'use strict';
 

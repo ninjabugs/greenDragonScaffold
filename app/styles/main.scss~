@@ -51,9 +51,13 @@ IMPORTANT NOTE:
 
 @import  '../scripts/aboutdrugs/aboutdrugscontent/_aboutdrugscontent-d.scss';
 
+@import  '../scripts/aboutdrugs/subnav/_subnav-d.scss';
+
 @import  '../scripts/aboutdrugs/subnavaboutdrugs/_subnavaboutdrugs-d.scss';
 
 @import  '../scripts/aboutus/aboutuscontent/_aboutuscontent-d.scss';
+
+@import  '../scripts/aboutus/subnav/_subnav-d.scss';
 
 @import  '../scripts/aboutus/subnavaboutus/_subnavaboutus-d.scss';
 
@@ -68,6 +72,8 @@ IMPORTANT NOTE:
 @import  '../scripts/home/sidebox/_sidebox-d.scss';
 
 @import  '../scripts/menue/menue/_menue-d.scss';
+
+@import  '../scripts/menue/subnav/_subnav-d.scss';
 
 @import  '../scripts/menue/subnavmenue/_subnavmenue-d.scss';
 

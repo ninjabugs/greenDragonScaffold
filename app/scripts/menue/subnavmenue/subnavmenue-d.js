@@ -2,15 +2,15 @@
 
 /**
 * @ngdoc directive
-* @name scaffold.directive:subnav
+* @name scaffold.directive:subnavmenue
 * @description
-* # subnav
+* # subnavmenue
 */
 angular.module('scaffold')
-.directive('subnav', function ()
+.directive('subnavmenue', function ()
 {
     return {
-        templateUrl: 'scripts/aboutdrugs/subnav/subnav-d.html',
+        templateUrl: 'scripts/menue/subnavmenue/subnavmenue-d.html',
         
         restrict: 'EA',
         scope: {
@@ -20,7 +20,7 @@ angular.module('scaffold')
         {
 
         },
-        controller: function ($scope, Subnav)
+        controller: function ($scope, Subnavmenue)
         {
 
         }

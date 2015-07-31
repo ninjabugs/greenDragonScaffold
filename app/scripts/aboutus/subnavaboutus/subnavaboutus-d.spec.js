@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: subnav', function ()
+describe('Directive: subnavaboutus', function ()
 {
 
     // load the directive's module
@@ -16,7 +16,7 @@ describe('Directive: subnav', function ()
 
     it('should do something', inject(function ($compile)
     {
-        element = $compile('<subnav></subnav>');
+        element = $compile('<subnavaboutus></subnavaboutus>');
         expect(true).toBe(true);
     }));
 });

@@ -1,13 +1,13 @@
 'use strict';
 
-describe('Service: Subnav', function () {
+describe('Service: Subnavaboutdrugs', function () {
     // load the service's module
     beforeEach(module('scaffold'));
 
     // instantiate service
-    var Subnav;
-    beforeEach(inject(function (_Subnav_) {
-        Subnav = _Subnav_;
+    var Subnavaboutdrugs;
+    beforeEach(inject(function (_Subnavaboutdrugs_) {
+        Subnavaboutdrugs = _Subnavaboutdrugs_;
     }));
 
     it('should be defined', function () {
