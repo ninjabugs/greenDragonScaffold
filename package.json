@@ -41,9 +41,11 @@
     "protractor": "^1.8.0",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.0.2",
+    "slick-carousel": "^1.5.8",
     "wiredep": "^2.2.2"
   },
   "dependencies": {
-    "cordova-android": "^3.7.1"
+    "cordova-android": "^3.7.1",
+    "slick-carousel": "^1.5.8"
   }
 }

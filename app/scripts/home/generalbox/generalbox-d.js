@@ -22,7 +22,7 @@ angular.module('scaffold')
         },
         controller: function ($scope, Generalbox)
         {
-
+        
         }
     };
 });

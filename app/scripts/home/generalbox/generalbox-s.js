@@ -11,4 +11,7 @@ angular.module('scaffold')
         'use strict';
 
         // AngularJS will instantiate a singleton by calling "new" on this function
+
+ /* https://github.com/revolunet/angular-carousel */
+
     });

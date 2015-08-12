@@ -14,6 +14,9 @@
 
     <!-- build:css(.tmp,app) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -26,7 +29,7 @@
 <body ng-app="scaffold">
 <header></header>
 <main ui-view>
-  Main ui-view
+  Main ui-view <!-- TODO change "Main ui-view" -->
 </main>
 <footer></footer>
 
@@ -46,11 +49,19 @@
 
 <!-- build:js({.tmp,app}) scripts/vendor.js -->
 <!-- bower:js -->
+<script src="bower_components/modernizr/modernizr.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-aria/angular-aria.js"></script>
 <script src="bower_components/angular-resource/angular-resource.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+<script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="bower_components/foundation/js/foundation.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -58,6 +69,7 @@
 <!-- inject:js -->
 <script src="scripts/_app.js"></script>
 <script src="scripts/routes.js"></script>
+<script src="scripts/_main/global-services/dummy-vars-f.js"></script>
 <script src="scripts/_routes/aboutdrugs/aboutdrugs-c.js"></script>
 <script src="scripts/_routes/aboutdrugs/aboutdrugs-s.js"></script>
 <script src="scripts/_routes/aboutus/aboutus-c.js"></script>

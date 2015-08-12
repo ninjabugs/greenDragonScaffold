@@ -1,6 +1,11 @@
 <div class="footer">
-misc footer<br>
-<span ng-repeat="nav in navs">
-	<a ui-sref="{{nav}}">{{nav}}</a>
-</span>
+	<hr>
+
+	<ul class="small-block-grid-6">
+	  <li ng-repeat="nav in navs"><a ui-sref="{{nav}}">{{nav}}</a></li>
+	  <li>Vic Buisness</li>
+	  <li>link me</li>
+	  <!-- TODO put in actual links -->
+	</ul>
+
 </div>

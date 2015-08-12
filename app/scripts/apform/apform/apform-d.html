@@ -1,3 +1,69 @@
 <div class="apform">
-apform application form
+apform application form<br><br>
+
+	<form>
+
+		<div class="large-6 columns">
+      		<label>I hearby declare that the information stated below is factual: </label>
+      		<input id="isFactual" type="checkbox"><label for="isFactual"></label>
+    	</div>
+
+		<div ng-repeat="form in application" class="row">
+
+		<!-- title -->
+			<div ng-if="form.type==='title'">
+				<br><br>{{form.label}}
+			</div>
+
+		<!-- text -->
+			<div ng-if="form.type==='text'" class="{{form.size1}}">
+					<div class="row">
+						<div class="{{form.size2}}">
+							<label for="{{form.label}}" class="right">{{form.label}}</label>
+						</div>
+						<div class="{{form.size3}}">
+							<input type="{{form.type}}" id="{{form.label}}" placeholder="{{form.label}} ">
+						</div>
+						<div ng-if="form.label==='ID Presented (2)'" class="{{form.size3}}">
+							<input type="{{form.type}}" id="{{form.label}}" placeholder="{{form.label}}">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- number -->
+			<div ng-if="form.type==='number'" class="{{form.size1}}">
+					<div class="row">
+						<div class="{{form.size2}}">
+							<label for="{{form.label}}" class="right">{{form.label}}</label>
+						</div>
+						<div class="{{form.size3}}">
+							<input type="{{form.type}}" id="{{form.label}}" placeholder="{{form.label}}">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- dropdown -->
+			<div ng-if="form.type==='drop'" class="{{form.size1}}">
+				<label>{{form.label}}
+					<select>
+						<option ng-repeat="opton in form" value="{{option.option}}">{{option.option}}</option>
+					</label>
+				</div>
+			</div>
+
+		<!-- text area -->
+			<div ng-if="form.type==='textarea'" class="{{form.size1}}">
+				<label>{{form.label}}
+					<textarea></textarea>
+				</label>
+			</div>
+
+		<!-- end repeat -->
+		</div>
+
+
+	</form>
+
 </div>

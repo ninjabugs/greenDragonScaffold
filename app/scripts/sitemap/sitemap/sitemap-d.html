@@ -1,3 +1,12 @@
 <div class="sitemap">
-sitemap sitemap
+sitemap sitemap<br><br>
+
+<!-- TODO make/fix links, style, index site's pages for site map -->
+
+	<ul ng-repeat="page in pages">
+		<li><h1><a>{{page.topic}}</a></h1></li>
+		<ul ng-repeat="sub in page.sub">
+			<li><h2><a>{{page.sub[$index]}}</a></h2></li>
+		</ul>
+	</ul>
 </div>

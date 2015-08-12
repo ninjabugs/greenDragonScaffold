@@ -15,6 +15,8 @@ module.exports = function (config)
         // list of files / patterns to load in the browser
         files: [
             // bower:js
+            'app/bower_components/modernizr/modernizr.js',
+            'app/bower_components/jquery/dist/jquery.js',
             'app/bower_components/es5-shim/es5-shim.js',
             'app/bower_components/json3/lib/json3.js',
             'app/bower_components/angular/angular.js',
@@ -22,6 +24,12 @@ module.exports = function (config)
             'app/bower_components/angular-aria/angular-aria.js',
             'app/bower_components/angular-resource/angular-resource.js',
             'app/bower_components/angular-ui-router/release/angular-ui-router.js',
+            'app/bower_components/fastclick/lib/fastclick.js',
+            'app/bower_components/jquery.cookie/jquery.cookie.js',
+            'app/bower_components/jquery-placeholder/jquery.placeholder.js',
+            'app/bower_components/foundation/js/foundation.js',
+            'app/bower_components/slick-carousel/slick/slick.min.js',
+            'app/bower_components/webcomponentsjs/webcomponents.js',
             'app/bower_components/angular-mocks/angular-mocks.js',
             // endbower
 

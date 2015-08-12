@@ -20,9 +20,10 @@ angular.module('scaffold')
         {
 
         },
-        controller: function ($scope, Sitemap)
+        controller: function ($scope, Sitemap, DummyVars)
         {
-
+            var dummy = DummyVars;
+            $scope.pages = [{topic: dummy.oneWord, sub: dummy.shortArray}];
         }
     };
 });
