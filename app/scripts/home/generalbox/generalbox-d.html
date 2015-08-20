@@ -1,21 +1,34 @@
 <div class="generalbox">
 
-<div style="border:1px black solid">
+<div style="border:1px black solid; overflow:scroll;">
   home generalbox (should be carasoul)
-  <!--  <div>
-      <div><img src="/img/cat1.jpg">Caption</div>
-      <div style="position:absolute">Overlayed Caption</div>
-    </div>
-    <div>
-      <div><img src="/img/cat2.jpg">Caption</div>
-      <div style="position:absolute">Overlayed Caption</div>
-    </div>
-    <div>
-      <div><img src="/img/cat3.jpg">Caption</div>
-      <div style="position:absolute">Overlayed Caption</div>
-    </div>
-  </div> -->
 
   <!-- https://github.com/revolunet/angular-carousel -->
+  <!-- is looping working?w -->
+  <ul rn-carousel
+      rn-carousel-index="slider"
+      rn-carousel-controls
+      rn-carousel-controls-allow-loop="true"
+      rn-carousel-auto-slide="5"
+      rn-carousel-pause-on-hover
+      rn-carousel-duration="1000"
+      rn-carousel-transition="fadeAndSlide"
+      rn-carousel-easing="easeInOutBack"
+
+      style="height:250px"> <!-- fix height/styling -->
+    <li>
+      <img src="/img/cat1.jpg" style="z-index:-1;">
+      <span style="position:absolute; z-index:1;">Caption1</span>
+    </li>
+    <li>
+      <img src="/img/cat2.jpg">
+      <span style="position:absolute; z-index:1;">Capiton2</span>
+    </li>
+    <li>
+      <img src="/img/cat3.jpg">
+      <span style="position:absolute; z-index:1;">Caption3</span>
+    </li>
+  </ul>
+  <div rn-carousel-indicators="true" ng-if="slides.length > 1" slides="slides" rn-carousel-index="slider"></div> <!-- after addng repeat this should work. "slides" will be collecton -->
 
 </div>

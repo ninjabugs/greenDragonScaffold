@@ -1,9 +1,10 @@
 <div class="aboutdrugscontent">
 about drugs content<br>
 
-<!-- TODO angularize about us content, style also -->
-	<ul style="text-align:center;">
-		<li><h1>{{dummy.oneWord}}</h1></li>
-		<li><h2>{{dummy.longString}}</h2></li>
+<!-- TODO style -->
+	<ul ng-repeat="about in contentAbout" style="text-align:center">
+		<li><h3>{{about.title}}</h3></li>
+		<li><h5>{{about.info}}</h5></li>
 	</ul>
+
 </div>

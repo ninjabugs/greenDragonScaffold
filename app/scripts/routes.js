@@ -13,6 +13,11 @@ angular.module('scaffold')
         'use strict';
 
         $stateProvider
+            .state('default', {
+                url: '/',
+                controller: 'HomeCtrl',
+                templateUrl: 'scripts/_routes/home/home-c.html'
+            })
             .state('home', {
                 url: '/home',
                 controller: 'HomeCtrl',

@@ -10,5 +10,6 @@ angular.module('scaffold', [
     'ngAnimate',
     'ngAria',
     'ngResource',
-    'ui.router'
+    'ui.router',
+     'angular-carousel'
   ]);

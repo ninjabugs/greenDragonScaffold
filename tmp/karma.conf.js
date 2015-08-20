@@ -30,6 +30,8 @@ module.exports = function (config)
             'app/bower_components/foundation/js/foundation.js',
             'app/bower_components/slick-carousel/slick/slick.min.js',
             'app/bower_components/webcomponentsjs/webcomponents.js',
+            'app/bower_components/angular-touch/angular-touch.js',
+            'app/bower_components/angular-carousel/dist/angular-carousel.js',
             'app/bower_components/angular-mocks/angular-mocks.js',
             // endbower
 

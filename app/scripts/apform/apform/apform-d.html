@@ -1,11 +1,11 @@
 <div class="apform">
 apform application form<br><br>
 
-	<form>
+	<ng-form name="applicationForm" ng-submit="api.submit()">
 
 		<div class="large-6 columns">
-      		<label>I hearby declare that the information stated below is factual: </label>
-      		<input id="isFactual" type="checkbox"><label for="isFactual"></label>
+      		<label class="left">I hearby declare that the information stated below is factual: </label> <!-- TODO fix ugly space -->
+      		<input id="isFactual" type="checkbox"><label for="isFactual" required></label>
     	</div>
 
 		<div ng-repeat="form in application" class="row">
@@ -16,54 +16,69 @@ apform application form<br><br>
 			</div>
 
 		<!-- text -->
-			<div ng-if="form.type==='text'" class="{{form.size1}}">
-					<div class="row">
-						<div class="{{form.size2}}">
-							<label for="{{form.label}}" class="right">{{form.label}}</label>
-						</div>
-						<div class="{{form.size3}}">
-							<input type="{{form.type}}" id="{{form.label}}" placeholder="{{form.label}} ">
-						</div>
-						<div ng-if="form.label==='ID Presented (2)'" class="{{form.size3}}">
-							<input type="{{form.type}}" id="{{form.label}}" placeholder="{{form.label}}">
-						</div>
+			<div ng-if="form.type==='text' || form.type==='email' || form.type==='date'"
+			     class="small-8">
+				<div class="row input-wrapper">
+					<div class="small-8">
+						<label for="{{form.label}}"
+						       class="left inline">{{form.label}}
+						</label>
 					</div>
+					<div class="small-3 colums">
+						<input type="{{form.type}}"
+						       id="{{form.label}}"
+						       name="{{form.label}}"
+						       placeholder="{{form.label}}"
+						       ng-required="{{form.required}}"
+						       ng-pattern="'{{form.pattern}}'"
+						       ng-model="$parent.$parent.output[form.model]">
+					</div>
+					<small>
+						applicationForm[{{form.label}}].$valid: {{applicationForm[form.label].$valid}}<br>
+						applicationForm[{{form.label}}].$error: {{applicationForm[form.label].$error}}<br>
+						applicationForm[{{form.label}}].required: {{applicationForm[form.label].required}}<br>
+						applicationForm.$valid: {{applicationForm.$valid}} <br>
+					</small>
+					<!--TODO .error or alert colours? -->
 				</div>
 			</div>
 
 		<!-- number -->
-			<div ng-if="form.type==='number'" class="{{form.size1}}">
-					<div class="row">
-						<div class="{{form.size2}}">
-							<label for="{{form.label}}" class="right">{{form.label}}</label>
-						</div>
-						<div class="{{form.size3}}">
-							<input type="{{form.type}}" id="{{form.label}}" placeholder="{{form.label}}">
-						</div>
+			<div ng-if="form.type==='number'" class="small-8">
+				<div class="row">
+					<div class="small-3 colums">
+						<label for="{{form.label}}" class="left inline">{{form.label}}</label>
+					</div>
+					<div class="small-9 colums">
+						<input type="{{form.type}}" id="{{form.label}}" placeholder="{{form.label}}" ng-model="$parent.$parent.output[form.model]">
 					</div>
 				</div>
 			</div>
 
 		<!-- dropdown -->
-			<div ng-if="form.type==='drop'" class="{{form.size1}}">
+			<div ng-if="form.type==='drop'" class="small-3 colums">
 				<label>{{form.label}}
-					<select>
-						<option ng-repeat="opton in form" value="{{option.option}}">{{option.option}}</option>
-					</label>
-				</div>
+					<select ng-model="$parent.$parent.output[form.model]">
+						<option ng-repeat="option in form.options" value="{{option}}">{{option}}</option>
+					</select>
+				</label>	
 			</div>
 
 		<!-- text area -->
-			<div ng-if="form.type==='textarea'" class="{{form.size1}}">
+			<div ng-if="form.type==='textarea'" class="small-3 colums">
 				<label>{{form.label}}
-					<textarea></textarea>
+					<textarea ng-model="$parent.$parent.output[form.model]"></textarea>
 				</label>
 			</div>
 
 		<!-- end repeat -->
 		</div>
 
+		<button type="submit" >Submit</button>
 
-	</form>
+		<br><br>
+		Output:  {{output}}
+
+	</ng-form>
 
 </div>

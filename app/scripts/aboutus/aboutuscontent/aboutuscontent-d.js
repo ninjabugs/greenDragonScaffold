@@ -20,9 +20,10 @@ angular.module('scaffold')
         {
 
         },
-        controller: function ($scope, Aboutuscontent)
+        controller: function ($scope, Aboutuscontent, DummyVars)
         {
-
+            var dummy = DummyVars;
+            $scope.contentAbout = [{title: dummy.oneWord, info: dummy.shortString}];
         }
     };
 });
